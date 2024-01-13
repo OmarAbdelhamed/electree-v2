@@ -294,11 +294,16 @@ the website, in dark theme
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background--webkit-background-size: cover;
   background--moz-background-size: cover;
   background--o-background-size: cover;
   background-min-height: 46rem;
+}
+@media (max-width: 650px) {
+  .home {
+    background-attachment: scroll;
+  }
 }
 .home__container {
   position: relative;
