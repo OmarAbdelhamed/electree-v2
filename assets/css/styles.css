@@ -295,6 +295,10 @@ the website, in dark theme
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background--webkit-background-size: cover;
+  background--moz-background-size: cover;
+  background--o-background-size: cover;
+  background-min-height: 45rem;
 }
 .home__container {
   position: relative;

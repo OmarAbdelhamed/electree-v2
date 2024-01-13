@@ -12,6 +12,10 @@
     repeat: $repeat;
     size: cover;
     attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    min-height: 45rem;
   }
 }
 .home {
