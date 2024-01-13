@@ -293,7 +293,6 @@ the website, in dark theme
   background-image: linear-gradient(to top, var(--background-hue-first), var(--background-hue-second)), url("/assets/img/nycbg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
   background-attachment: fixed;
 }
 .home__container {
