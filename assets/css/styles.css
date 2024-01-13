@@ -787,7 +787,9 @@ the website, in dark theme
     top: 30rem;
   }
   .home__description {
-    width: 400px;
+    width: 300px;
+    font-size: medium;
+    margin-top: -50px;
   }
   .steps__bg {
     padding: 2rem 1rem;
