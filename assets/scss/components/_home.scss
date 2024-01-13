@@ -1,6 +1,6 @@
 /*=============== HOME ===============*/
 
-@mixin background($imgpath, $position: center center, $repeat: no-repeat) {
+@mixin background($imgpath, $position: fixed, $repeat: no-repeat) {
   background: {
     image: linear-gradient(
         to top,
