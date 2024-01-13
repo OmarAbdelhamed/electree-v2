@@ -1,0 +1,73 @@
+/*=============== HOME ===============*/
+
+@mixin background($imgpath, $position: center center, $repeat: no-repeat) {
+  background: {
+    image: linear-gradient(
+        to top,
+        var(--background-hue-first),
+        var(--background-hue-second)
+      ),
+      url($imgpath);
+    position: $position;
+    repeat: $repeat;
+    size: cover;
+    attachment: fixed;
+  }
+}
+.home {
+  height: 45rem;
+  padding: 3.5rem 0 2rem;
+  @include background('/assets/img/nycbg.jpg');
+
+  &__container {
+    position: relative;
+    row-gap: 2rem;
+  }
+  &__data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+  }
+  &__title {
+    margin-bottom: var(--mb-1);
+    text-align: center;
+  }
+  &__logo {
+    height: 300px;
+  }
+  &__description {
+    margin-bottom: var(--mb-2-5);
+    text-align: center;
+    font-size: x-large;
+    font-weight: 600;
+    width: 700px;
+    color: var(--first-color-social);
+  }
+  &__social {
+    position: absolute;
+    top: 2rem;
+    right: -1rem;
+    display: grid;
+    justify-items: center;
+    row-gap: 2rem;
+
+    &-follow {
+      font-weight: var(--font-medium);
+      font-size: var(--smaller-font-size);
+      color: var(--first-color-social);
+      position: relative;
+      transform: rotate(90deg);
+    }
+    &-links {
+      display: inline-flex;
+      flex-direction: column;
+      row-gap: 0.5rem;
+    }
+    &-link {
+      font-size: 2rem;
+      color: var(--first-color-social);
+    }
+  }
+}
