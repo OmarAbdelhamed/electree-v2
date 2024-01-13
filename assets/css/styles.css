@@ -781,6 +781,11 @@ the website, in dark theme
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .home__img {
     width: 180px;
   }
