@@ -782,6 +782,7 @@ the website, in dark theme
     margin-right: var(--mb-1);
   }
   .home {
+    height: 40rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -793,7 +794,7 @@ the website, in dark theme
     font-size: var(--h1-font-size);
   }
   .home__social {
-    top: 30rem;
+    top: 20rem;
   }
   .home__description {
     width: 300px;

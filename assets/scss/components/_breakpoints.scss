@@ -7,6 +7,7 @@
   }
 
   .home {
+    height: 40rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +18,7 @@
       font-size: var(--h1-font-size);
     }
     &__social {
-      top: 30rem;
+      top: 20rem;
     }
     &__description {
       width: 300px;
