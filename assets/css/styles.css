@@ -291,7 +291,7 @@ the website, in dark theme
   height: 46rem;
   padding: 3.5rem 0 2rem;
   background-image: linear-gradient(to top, var(--background-hue-first), var(--background-hue-second)), url("/assets/img/nycbg.jpg");
-  background-position: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
