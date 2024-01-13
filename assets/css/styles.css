@@ -288,7 +288,7 @@ the website, in dark theme
 
 /*=============== HOME ===============*/
 .home {
-  height: 45rem;
+  height: 46rem;
   padding: 3.5rem 0 2rem;
   background-image: linear-gradient(to top, var(--background-hue-first), var(--background-hue-second)), url("/assets/img/nycbg.jpg");
   background-position: center center;
@@ -298,7 +298,7 @@ the website, in dark theme
   background--webkit-background-size: cover;
   background--moz-background-size: cover;
   background--o-background-size: cover;
-  background-min-height: 45rem;
+  background-min-height: 46rem;
 }
 .home__container {
   position: relative;
