@@ -16,6 +16,9 @@
     &__social {
       top: 30rem;
     }
+    &__description {
+      width: 400px;
+    }
   }
 
   .steps {
@@ -64,7 +67,7 @@
       top: 27rem;
     }
 
-    &__description{
+    &__description {
       width: 400px;
       font-size: medium;
       margin-top: -50px;
@@ -105,8 +108,8 @@
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
-  
-  .about__container{
+
+  .about__container {
     margin-bottom: 100px;
   }
 
@@ -124,7 +127,7 @@
       top: 30%;
       right: -40px;
     }
-    &__description{
+    &__description {
       width: 600px;
       font-size: larger;
       margin-top: -30px;
@@ -179,7 +182,7 @@
     &__img {
       width: 350px;
     }
-    &__description{
+    &__description {
       width: 650px;
       font-size: larger;
       margin-top: -30px;

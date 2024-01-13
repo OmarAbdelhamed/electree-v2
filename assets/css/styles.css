@@ -786,6 +786,9 @@ the website, in dark theme
   .home__social {
     top: 30rem;
   }
+  .home__description {
+    width: 400px;
+  }
   .steps__bg {
     padding: 2rem 1rem;
   }
