@@ -156,7 +156,7 @@ the website, in dark theme
   padding: 5.5rem 0 1rem;
 }
 .section__title, .section__title-center {
-  font-size: 50px;
+  font-size: 30px;
   margin-bottom: var(--mb-2);
   line-height: 140%;
 }
@@ -837,9 +837,15 @@ the website, in dark theme
     grid-template-columns: 0.6fr;
     justify-content: center;
   }
+  .switch-web {
+    display: none;
+  }
 }
 /* For medium devices */
 @media screen and (min-width: 500px) {
+  .switch-web {
+    display: none;
+  }
   .steps__container {
     grid-template-columns: repeat(1fr);
   }
@@ -878,10 +884,19 @@ the website, in dark theme
   .footer__subscribe {
     width: 400px;
   }
+  .steps__bg {
+    padding: 3.5rem 2.5rem;
+  }
 }
 @media screen and (min-width: 767px) {
   body {
     margin: 0;
+  }
+  .switch-web {
+    display: inline-block;
+  }
+  .switch-mobile {
+    display: none;
   }
   .nav {
     height: calc(var(--header-height) + 1.5rem);
@@ -936,6 +951,9 @@ the website, in dark theme
   }
   .footer__subscribe {
     width: initial;
+  }
+  .steps__bg {
+    padding: 3.5rem 2.5rem;
   }
 }
 /* For large devices */

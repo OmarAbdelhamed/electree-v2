@@ -52,10 +52,17 @@
     grid-template-columns: 0.6fr;
     justify-content: center;
   }
+  .switch-web {
+    display: none;
+  }
 }
 
 /* For medium devices */
 @media screen and (min-width: 500px) {
+  .switch-web {
+    display: none;
+  }
+
   .steps {
     &__container {
       grid-template-columns: repeat(1fr);
@@ -104,11 +111,25 @@
   .footer__subscribe {
     width: 400px;
   }
+
+  .steps {
+    &__bg {
+      padding: 3.5rem 2.5rem;
+    }
+  }
 }
 
 @media screen and (min-width: 767px) {
   body {
     margin: 0;
+  }
+
+  .switch-web {
+    display: inline-block;
+  }
+
+  .switch-mobile {
+    display: none;
   }
 
   .nav {
@@ -174,6 +195,12 @@
     }
     &__subscribe {
       width: initial;
+    }
+  }
+
+  .steps {
+    &__bg {
+      padding: 3.5rem 2.5rem;
     }
   }
 }
