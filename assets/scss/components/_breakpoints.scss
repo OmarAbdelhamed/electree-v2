@@ -5,9 +5,12 @@
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
-  
+
+  .about__container {
+    margin-bottom: 100px;
+  }
+
   .home {
-    
     height: 40rem;
     display: flex;
     justify-content: center;
@@ -36,6 +39,14 @@
       padding: 1.5rem;
     }
   }
+  .whyus {
+    &__bg {
+      padding: 2rem 1rem;
+    }
+    &__card {
+      padding: 1.5rem;
+    }
+  }
 
   .product__container {
     grid-template-columns: 0.6fr;
@@ -50,6 +61,16 @@
       grid-template-columns: repeat(1fr);
     }
   }
+
+
+  .about__img {
+    width: 420px;
+  }
+
+  .about__container {
+    margin-bottom: 150px;
+  }
+
   .product {
     &__description {
       padding: 0 4rem;
@@ -162,7 +183,7 @@
 
     &__title,
     &__title-center {
-      font-size: var(--h1-font-size);
+      font-size: 50px;
     }
   }
 
@@ -197,18 +218,26 @@
   }
 
   .about__img {
-    width: 380px;
+    width: 420px;
   }
 
   .steps {
-    &__container {
-      grid-template-columns: repeat(3, 1fr);
-    }
     &__bg {
       padding: 3.5rem 2.5rem;
     }
     &__card-title {
       font-size: var(--normal-font-size);
+    }
+  }
+  .whyus {
+    &__container {
+      grid-template-columns: repeat(1fr);
+    }
+    &__bg {
+      padding: 3.5rem 2.5rem;
+    }
+    &__card-title {
+      font-size: var(--h2-font-size);
     }
   }
 

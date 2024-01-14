@@ -71,7 +71,7 @@ const toggleItem = (item) => {
 const sections = document.querySelectorAll('section[id]');
 
 function scrollActive() {
-  const scrollY = window.pageYOffset;
+  const scrollY = window.scrollY;
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight,
@@ -161,35 +161,38 @@ function setThemeOnLoad() {
 }
 
 // Call the function on page load
-document.addEventListener('DOMContentLoaded', setThemeOnLoad);
-
-const video = document.getElementById('myVideo');
-const btn = document.getElementById('myBtn');
-
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = 'Pause';
-  } else {
-    video.pause();
-    btn.innerHTML = 'Play';
-  }
-}
+document.addEventListener('DOMContentLoaded', () => {
+  setThemeOnLoad();
+  setScrollReveal();
+});
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
   origin: 'top',
   distance: '60px',
   duration: 2500,
-  delay: 400,
-  // reset: true
+  delay: 100,
+  reset: true,
 });
 
-sr.reveal(`.home__data`);
-sr.reveal(`.home__img`, { delay: 500 });
-sr.reveal(`.home__social`, { delay: 600 });
-sr.reveal(`.about__img, .contact__box`, { origin: 'left' });
-sr.reveal(`.about__data, .contact__form`, { origin: 'right' });
-sr.reveal(`.steps__card, .product__card, .questions__group, .footer`, {
-  interval: 100,
-});
+// Function to set up the ScrollReveal instance for reverse animations
+function setScrollReveal() {
+  const scrollY = window.scrollY;
+
+  sr.reveal(`.home__data`);
+  sr.reveal(`.home__img`, { delay: 500 });
+  sr.reveal(`.home__social`, { delay: 600 });
+  sr.reveal(`.about__img, .contact__box`, { origin: 'left' });
+  sr.reveal(`.about__data, about__datas, .contact__form`, { origin: 'right' });
+  sr.reveal(
+    `.steps__card, .product__card, .whyus__card, .whyus__card, .Squestions__group, .footer`,
+    { interval: 100 }
+  );
+
+  if (scrollY > 80) {
+    sr.reveal(`.home__data`, { reset: false });
+    sr.reveal(`.home__img`, { delay: 500, reset: false });
+    sr.reveal(`.home__social`, { delay: 600, reset: false });
+    sr.reveal(`.about__img, .contact__box`, { origin });
+  }
+}

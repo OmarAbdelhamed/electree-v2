@@ -156,7 +156,7 @@ the website, in dark theme
   padding: 5.5rem 0 1rem;
 }
 .section__title, .section__title-center {
-  font-size: var(--h2-font-size);
+  font-size: small;
   margin-bottom: var(--mb-2);
   line-height: 140%;
 }
@@ -392,11 +392,22 @@ the website, in dark theme
 .about__container {
   row-gap: 2rem;
 }
+.about__data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__datas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .about__head {
   text-align: center;
-  font-size: xx-large;
+  font-size: 50px;
   color: var(--title-color);
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   font-weight: 600;
 }
 .about__img {
@@ -406,6 +417,7 @@ the website, in dark theme
 .about__title {
   margin-bottom: var(--mb-1);
   color: var(--text-color);
+  line-height: 2.3rem;
 }
 .about__description {
   margin-bottom: var(--mb-2);
@@ -424,6 +436,57 @@ the website, in dark theme
   font-size: 1rem;
   color: var(--first-color);
   margin-top: 0.15rem;
+}
+
+/*=============== STEPS ===============*/
+.whyus__bg {
+  background-color: transparent;
+  width: 100%;
+}
+.whyus__container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.whyus__title {
+  color: var(--title-font);
+  font-size: 50px;
+}
+.whyus__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  background-color: var(--first-color);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 40px;
+  box-shadow: 0px 2px 20px rgb(87, 87, 87);
+}
+.whyus__card:hover .steps__card-number {
+  transform: translateY(-0.25rem);
+}
+.whyus__card-number {
+  display: inline-block;
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  transition: 0.3s;
+}
+.whyus__card-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1);
+  color: rgb(237, 237, 237);
+}
+.whyus__card-description {
+  font-size: var(--h3-font-size);
+  font-weight: 600;
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 /*=============== STEPS ===============*/
@@ -725,6 +788,9 @@ the website, in dark theme
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
+  .about__container {
+    margin-bottom: 100px;
+  }
   .home {
     height: 40rem;
     display: flex;
@@ -751,6 +817,12 @@ the website, in dark theme
   .steps__card {
     padding: 1.5rem;
   }
+  .whyus__bg {
+    padding: 2rem 1rem;
+  }
+  .whyus__card {
+    padding: 1.5rem;
+  }
   .product__container {
     grid-template-columns: 0.6fr;
     justify-content: center;
@@ -760,6 +832,12 @@ the website, in dark theme
 @media screen and (min-width: 500px) {
   .steps__container {
     grid-template-columns: repeat(1fr);
+  }
+  .about__img {
+    width: 420px;
+  }
+  .about__container {
+    margin-bottom: 150px;
   }
   .product__description {
     padding: 0 4rem;
@@ -854,7 +932,7 @@ the website, in dark theme
     padding: 8rem 0 1rem;
   }
   .section__title, .section__title-center {
-    font-size: var(--h1-font-size);
+    font-size: 50px;
   }
   .nav {
     height: calc(var(--header-height) + 1.5rem);
@@ -882,16 +960,22 @@ the website, in dark theme
     margin-top: -30px;
   }
   .about__img {
-    width: 380px;
-  }
-  .steps__container {
-    grid-template-columns: repeat(3, 1fr);
+    width: 420px;
   }
   .steps__bg {
     padding: 3.5rem 2.5rem;
   }
   .steps__card-title {
     font-size: var(--normal-font-size);
+  }
+  .whyus__container {
+    grid-template-columns: repeat(1fr);
+  }
+  .whyus__bg {
+    padding: 3.5rem 2.5rem;
+  }
+  .whyus__card-title {
+    font-size: var(--h2-font-size);
   }
   .product__description {
     padding: 0 16rem;

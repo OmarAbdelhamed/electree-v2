@@ -1,40 +1,52 @@
 /*=============== ABOUT ===============*/
-.about{
-    &__container{
-        row-gap: 2rem;
-    }
-    &__head{
-        text-align: center;
-        font-size: xx-large;
-        color: var(--title-color);
-        margin-bottom: 100px;
-        font-weight: 600;
-    }
-    &__img{
-        width: 280px;
-        justify-self: center;
-    }
-    &__title{
-        margin-bottom: var(--mb-1);
-        color: var(--text-color);
-    }
-    &__description{
-        margin-bottom: var(--mb-2);
-    }
-    &__details{
-        display: grid;
-        row-gap: 1rem;
-        margin-bottom: var(--mb-2-5);
+.about {
+  &__container {
+    row-gap: 2rem;
+  }
+  &__data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__datas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__head {
+    text-align: center;
+    font-size: 50px;
+    color: var(--title-color);
+    margin-bottom: 50px;
+    font-weight: 600;
+  }
+  &__img {
+    width: 280px;
+    justify-self: center;
+  }
+  &__title {
+    margin-bottom: var(--mb-1);
+    color: var(--text-color);
+    line-height: 2.3rem;
+  }
+  &__description {
+    margin-bottom: var(--mb-2);
+  }
+  &__details {
+    display: grid;
+    row-gap: 1rem;
+    margin-bottom: var(--mb-2-5);
 
-        &-description{
-            display: inline-flex;
-            column-gap: .5rem;
-            font-size: var(--small-font-size);
-        }
-        &-icon{
-            font-size: 1rem;
-            color: var(--first-color);
-            margin-top: .15rem;
-        }
+    &-description {
+      display: inline-flex;
+      column-gap: 0.5rem;
+      font-size: var(--small-font-size);
     }
+    &-icon {
+      font-size: 1rem;
+      color: var(--first-color);
+      margin-top: 0.15rem;
+    }
+  }
 }
