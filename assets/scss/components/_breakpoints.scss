@@ -62,7 +62,6 @@
     }
   }
 
-
   .about__img {
     width: 420px;
   }
@@ -132,7 +131,10 @@
   .home__container,
   .about__container,
   .questions__container,
-  .contact__container,
+  .contact__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -183,7 +185,7 @@
 
     &__title,
     &__title-center {
-      font-size: 50px;
+      font-size: 30px;
     }
   }
 
@@ -222,6 +224,9 @@
   }
 
   .steps {
+    &__container {
+      grid-template-columns: repeat(3, 1fr);
+    }
     &__bg {
       padding: 3.5rem 2.5rem;
     }
@@ -263,30 +268,12 @@
     }
   }
 
-  .questions {
-    &__container {
-      padding: 1rem 0 4rem;
-    }
-    &__title {
-      text-align: initial;
-    }
-    &__group {
-      row-gap: 2rem;
-    }
-    &__header {
-      padding: 1rem;
-    }
-    &__description {
-      padding: 0 3.5rem 2.25rem 2.75rem;
-    }
-  }
-
   .footer {
     &__logo {
       font-size: var(--h3-font-size);
     }
     &__container {
-      grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+      grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
     }
     &__copy {
       margin: 7rem 0 2rem;

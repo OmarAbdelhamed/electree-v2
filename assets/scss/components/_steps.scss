@@ -39,6 +39,19 @@
       margin-bottom: var(--mb-2-5);
       transition: 0.3s;
     }
+    &-number-number {
+      display: inline-block;
+      background-color: transparent;
+      color: #fff;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.25rem;
+      width: 150px;
+      height: 90px;
+      text-align: center;
+      margin-bottom: var(--mb-2-5);
+      font-size: var(--h2-font-size);
+      transition: 0.3s;
+    }
     &-title {
       font-size: var(--h3-font-size);
       margin-bottom: var(--mb-0-5);

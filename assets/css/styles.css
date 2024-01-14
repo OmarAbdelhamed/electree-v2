@@ -115,7 +115,7 @@ body.dark-theme {
   --title-color: hsl(var(--hue), 4%, 95%);
   --text-color: hsl(var(--hue), 4%, 75%);
   --body-color: hsl(var(--hue), 8%, 12%);
-  --container-color: rgb(218, 218, 218);
+  --container-color: rgb(46, 46, 46);
   --background-hue-first: rgba(255, 255, 255, 0.352);
   --background-hue-second: rgba(0, 0, 0, 0.769);
 }
@@ -156,7 +156,7 @@ the website, in dark theme
   padding: 5.5rem 0 1rem;
 }
 .section__title, .section__title-center {
-  font-size: small;
+  font-size: 50px;
   margin-bottom: var(--mb-2);
   line-height: 140%;
 }
@@ -528,6 +528,19 @@ the website, in dark theme
   margin-bottom: var(--mb-2-5);
   transition: 0.3s;
 }
+.steps__card-number-number {
+  display: inline-block;
+  background-color: transparent;
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  width: 150px;
+  height: 90px;
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+  font-size: var(--h2-font-size);
+  transition: 0.3s;
+}
 .steps__card-title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-5);
@@ -734,9 +747,6 @@ the website, in dark theme
   align-items: center;
   column-gap: 0.5rem;
 }
-.footer__card {
-  width: 35px;
-}
 .footer__copy {
   text-align: center;
   font-size: var(--smaller-font-size);
@@ -890,7 +900,9 @@ the website, in dark theme
   .home__container,
   .about__container,
   .questions__container,
-  .contact__container,
+  .contact__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -932,7 +944,7 @@ the website, in dark theme
     padding: 8rem 0 1rem;
   }
   .section__title, .section__title-center {
-    font-size: 50px;
+    font-size: 30px;
   }
   .nav {
     height: calc(var(--header-height) + 1.5rem);
@@ -961,6 +973,9 @@ the website, in dark theme
   }
   .about__img {
     width: 420px;
+  }
+  .steps__container {
+    grid-template-columns: repeat(3, 1fr);
   }
   .steps__bg {
     padding: 3.5rem 2.5rem;
@@ -995,26 +1010,11 @@ the website, in dark theme
   .product__title, .product__price {
     font-size: var(--normal-font-size);
   }
-  .questions__container {
-    padding: 1rem 0 4rem;
-  }
-  .questions__title {
-    text-align: initial;
-  }
-  .questions__group {
-    row-gap: 2rem;
-  }
-  .questions__header {
-    padding: 1rem;
-  }
-  .questions__description {
-    padding: 0 3.5rem 2.25rem 2.75rem;
-  }
   .footer__logo {
     font-size: var(--h3-font-size);
   }
   .footer__container {
-    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
   }
   .footer__copy {
     margin: 7rem 0 2rem;
