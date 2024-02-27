@@ -1,22 +1,22 @@
 /*=============== HOME ===============*/
 
-@mixin background($imgpath, $position: center, $repeat: no-repeat) {
+@mixin background($imgpath,$height, $position: center, $repeat: no-repeat) {
   background: {
     image: linear-gradient(
         to top,
         var(--background-hue-first),
-        var(--background-hue-second)
+        var(--background-hue-first)
       ),
       url($imgpath);
     position: $position;
     repeat: $repeat;
     size: cover;
-    attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    min-height: 46rem;
   }
+  height: $height;
+  width: 100%;
   @media (max-width: 650px) {
     background: {
       attachment: scroll;
@@ -25,59 +25,46 @@
 }
 
 .home {
-  height: 46rem;
-  padding: 3.5rem 0 2rem;
-  @include background('/assets/img/nycbg.jpg');
+  height: 31rem;
+  @include background('/assets/img/main backgroung pic 2.22.jpg', height);
 
-  &__container {
-    position: relative;
-    row-gap: 2rem;
-  }
   &__data {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: -50px;
+    align-items: left;
+    justify-content: left;
+    margin: -80px 200px 0px 200px;
   }
   &__title {
-    margin-bottom: var(--mb-1);
-    text-align: center;
-  }
-  &__logo {
-    height: 300px;
+    text-align: left;
+    color: #f8f8f8;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 47px;
+    margin-bottom: 20px;
   }
   &__description {
-    margin-bottom: var(--mb-2-5);
-    text-align: center;
-    font-size: x-large;
-    font-weight: 600;
-    width: 700px;
-    color: var(--first-color-social);
+    text-align: left;
+    color: #f8f8f8;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.1rem;
+    margin-bottom: 60px;
   }
-  &__social {
-    position: absolute;
-    top: 2rem;
-    right: -1rem;
-    display: grid;
-    justify-items: center;
-    row-gap: 2rem;
+  &__button {
+    width: 140px;
+    padding: 15px 40px 15px 40px;
+    text-align: center;
+    background-color: var(--first-color-social);
+    color: white;
+    border-radius: 4px;
+    height: 34px;
+    transition: all 0.2s ease-in-out;
 
-    &-follow {
-      font-weight: var(--font-medium);
-      font-size: var(--smaller-font-size);
-      color: var(--first-color-social);
-      position: relative;
-      transform: rotate(90deg);
-    }
-    &-links {
-      display: inline-flex;
-      flex-direction: column;
-      row-gap: 0.5rem;
-    }
-    &-link {
-      font-size: 2rem;
-      color: var(--first-color-social);
+    &:hover {
+      background-color: #282828;
     }
   }
 }

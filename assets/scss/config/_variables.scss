@@ -3,14 +3,14 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem; // 56px
+  --header-height: 145px; // 56px
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 150;
 
   --first-color: hsl(var(--hue), 60%, 35%);
-  --first-color-social: hsl(var(--hue), 200%, 25%);
+  --first-color-social: rgb(48, 186, 48);
   --first-color-alt: hsl(var(--hue), 24%, 30%);
   --first-color-light: hsl(var(--hue), 24%, 66%);
   --first-color-lighten: hsl(var(--hue), 24%, 92%);
@@ -18,8 +18,9 @@
   --text-color: hsl(var(--hue), 4%, 35%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
   --body-color: hsl(var(--hue), 0%, 100%);
+  --white: rgb(238, 238, 238);
   --container-color: #fff;
-  --background-hue-first: rgba(255, 255, 255, 0.495);
+  --background-hue-first: rgba(0, 0, 0, 0.47);
   --background-hue-second: rgba(255, 255, 255, 0.934);
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/

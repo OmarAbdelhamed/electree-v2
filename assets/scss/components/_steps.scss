@@ -1,66 +1,54 @@
 /*=============== STEPS ===============*/
 .steps {
   &__bg {
-    background-color: var(--first-color);
+    background-color: rgb(48, 186, 48);
     width: 100%;
-    margin-bottom: 100px;
   }
   &__container {
     gap: 2rem;
     padding-top: 1rem;
   }
-  &__title {
-    color: white;
+  &__img {
+    width: 600px;
+    height: 450px;
+    justify-self: center;
   }
-  &__card {
+  &__data {
     display: flex;
     flex-direction: column;
+    align-items: left;
     justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    padding: 2.5rem 3rem 2rem 1.5rem;
-    border-radius: 1rem;
-    box-shadow: 0px 10px 20px rgb(87, 87, 87);
-
-    &:hover .steps__card-number {
-      transform: translateY(-0.25rem);
-    }
-
-    &-number {
-      display: inline-block;
-      background-color: transparent;
-      color: #fff;
-      padding: 0.5rem 0.75rem;
-      border-radius: 0.25rem;
-      width: 110px;
-      height: 110px;
-      text-align: center;
-      font-size: var(--h2-font-size);
-      margin-bottom: var(--mb-2-5);
-      transition: 0.3s;
-    }
-    &-number-number {
-      display: inline-block;
-      background-color: transparent;
-      color: #fff;
-      padding: 0.5rem 0.75rem;
-      border-radius: 0.25rem;
-      width: 150px;
-      height: 90px;
-      text-align: center;
-      margin-bottom: var(--mb-2-5);
-      font-size: var(--h2-font-size);
-      transition: 0.3s;
-    }
-    &-title {
-      font-size: var(--h3-font-size);
-      margin-bottom: var(--mb-0-5);
-      color: var(--first-color);
-    }
-    &-description {
-      font-size: var(--small-font-size);
-      text-align: center;
-      color: rgb(30, 30, 30);
-    }
+  }
+  &__head {
+    text-align: left;
+    font-size: 20px;
+    color: rgb(16, 16, 16);
+    margin-bottom: 50px;
+    font-weight: 600;
+  }
+  &__title {
+    margin-bottom: var(--mb-1);
+    font-family: 'Lato', sans-serif;
+    color: #1a1a1a;
+    font-size: 30px;
+    line-height: 1rem;
+  }
+  &__discription {
+    font-family: 'Lato', sans-serif;
+    color: #2f2f2f;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+  &__button {
+    width: 140px;
+    margin-top: 20px;
+    background-color: rgb(52, 52, 52);
+    color: rgb(237, 237, 237);
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 3px;
   }
 }

@@ -13,13 +13,13 @@ body,
 button,
 input,
 textarea {
-  font-family: var(--body-font);
+  font-family: "Lato", sans-serif;
   font-size: var(--normal-font-size);
 }
 
 body {
   margin: var(--header-height) 0 0 0;
-  background-color: var(--body-color);
+  background-color: #f8f8f8;
   color: var(--text-color);
   transition: 0.4s; // For animation dark mode
 }

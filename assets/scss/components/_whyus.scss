@@ -1,7 +1,7 @@
 /*=============== STEPS ===============*/
 .whyus {
   &__bg {
-    background-color: transparent;
+    background-color: white;
     width: 100%;
   }
 
@@ -14,47 +14,54 @@
   }
 
   &__title {
-    color: var(--title-font);
-    font-size: 50px;
+    color: var(--first-color-social);
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  .why {
+    &__titles {
+      font-family: 'Lato', sans-serif;
+      margin-bottom: 10px;
+      font-size: 1.7rem;
+      color: #303030;
+    }
+
+    &__discription {
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+      color: #282828;
+      line-height: 29px;
+    }
   }
 
-  &__card {
+  .icons__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+  .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 600px;
-    background-color: var(--first-color);
-    padding: 1.5rem ;
-    border-radius: 1rem;
-    margin-bottom: 40px;
-    box-shadow: 0px 2px 20px rgb(87, 87, 87);
+    text-align: center;
 
-    &:hover .steps__card-number {
-      transform: translateY(-0.25rem);
+    &__img {
+      width: 200px;
+      height: 200px;
+      cursor: pointer;
     }
 
-    &-number {
-      display: inline-block;
-      background-color: transparent;
-      width: 300px;
-      height: 300px;
-      text-align: center;
-      transition: 0.3s;
-    }
-
-    &-title {
-      font-size: var(--h3-font-size);
-      margin-bottom: var(--mb-1);
-      color: rgb(237, 237, 237);
-    }
-
-    &-description {
-      font-size: var(--h3-font-size);
-      font-weight: 600;
-      text-align: center;
-      color: rgb(255, 255, 255);
+    &__span {
+      font-family: 'Lato', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #101010;
+      cursor: pointer;
     }
   }
 }
-

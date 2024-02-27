@@ -1,8 +1,6 @@
 /*=============== HEADER ===============*/
 .header {
   width: 100%;
-  background-color: transparent;
-  position: fixed;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
@@ -14,7 +12,8 @@
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+  // padding-bottom: 30px;
 
   &__logo,
   &__toggle,
@@ -22,14 +21,16 @@
     color: var(--title-color);
   }
   &__logo {
+    font-family: 'Paytone One', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: x-large;
+    font-size: 50px;
     letter-spacing: -1px;
     display: inline-flex;
-    align-items: center;
+    align-items: flex-end;
     column-gap: 0.5rem;
-    transition: 0.3s;
+    transition: 0.2s;
+    
 
     &:hover {
       color: var(--first-color);
@@ -44,14 +45,18 @@
     display: inline-flex;
     font-size: 1.25rem;
     cursor: pointer;
+    margin-bottom: 15px;
   }
 
   &__icon {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
   }
 
   &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     @media screen and (max-width: 767px) {
       position: fixed;
       background-color: var(--container-color);
@@ -76,41 +81,40 @@
   &__list {
     display: flex;
     flex-direction: column;
-    row-gap: 1.5rem;
+    gap: 15px;
+    font-size: 15px;
+    font-weight: 200;
+    margin-right: -50px;
+    margin-bottom: 25px;
+    
   }
   &__link {
-    color: var(--title-color);
-    font-weight: var(--font-medium);
+    font-family: 'Lato', sans-serif;
+    margin: 13px;
+    color: var(--first-color);
+    font-weight: 500;
+    transition: all 0.2s linear;
 
     &:hover {
-      color: var(--first-color);
+      color: rgb(14, 14, 14);
     }
   }
+  &__btns {
+    font-weight: 400;
+    padding: 12px 24px;
+    background-color: var(--first-color-social);
+    color: white;
+    border-radius: 4px;
+    border: 1px solid #1ba00c;
+    margin-bottom: 10px;
+  }
+}
+
+.li-button {
+  font-family: 'Lato', sans-serif;
 }
 
 /* Show menu */
 .show-menu {
   right: 0;
-}
-
-/* Change background header */
-.scroll-header {
-  box-shadow: 0 1px 4px hsla(var(--hue), 4%, 15%, 0.1);
-  background-color: var(--body-color);
-}
-
-/* Active link */
-.active-link {
-  position: relative;
-  color: var(--first-color);
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -0.5rem;
-    left: 0;
-    width: 50%;
-    height: 2px;
-    background-color: var(--first-color);
-  }
 }

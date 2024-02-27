@@ -1,21 +1,26 @@
 /*=============== FOOTER ===============*/
 .footer {
+  background-color: #333333;
+
+  &__span {
+    font-size: 40px;
+  }
+
   &__container {
     row-gap: 3rem;
+    justify-content: center;
+    align-items: center;
   }
   &__logo {
+    font-family: 'Paytone One', sans-serif;
     display: inline-flex;
     align-items: center;
-    column-gap: 0.5rem;
-    color: var(--title-color);
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: -1px;
-    margin-bottom: var(--mb-2-5);
+    color: rgb(243, 243, 243);
+    font-size: 30px;
     transition: 0.3s;
 
     &:hover {
-      color: var(--first-color);
+      color: var(--first-color-social);
     }
 
     &-icon {
@@ -23,10 +28,7 @@
       color: var(--first-color);
     }
   }
-  &__title {
-    font-size: var(--h3-font-size);
-    margin-bottom: var(--mb-1-5);
-  }
+
   &__subscribe {
     background-color: var(--first-color-lighten);
     padding: 0.75rem;
@@ -46,24 +48,22 @@
     padding: 1rem;
   }
   &__data {
+    font-family: 'Lato', sans-serif;
     display: grid;
     row-gap: 0.75rem;
   }
   &__information {
-    font-size: var(--small-font-size);
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 20px;
   }
   &__social {
     display: inline-flex;
     column-gap: 0.75rem;
 
     &-link {
-      font-size: 1rem;
-      color: var(--text-color);
-      transition: 0.3s;
-
-      &:hover {
-        transform: translateY(-0.25rem);
-      }
+      font-size: 3rem;
+      color: rgb(237, 237, 237);
     }
   }
   &__cards {
@@ -73,8 +73,28 @@
   }
   &__copy {
     text-align: center;
-    font-size: var(--smaller-font-size);
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
     color: var(--text-color-light);
     margin: 5rem 0 1rem;
+    &:before {
+      content: '';
+      display: block;
+      border-top: 2px solid rgb(86, 86, 86); /* Adjust the color, thickness, and style as needed */
+      margin-bottom: 10px;
+    }
   }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__mail {
+    color: var(--first-color-social);
+  }
+}
+
+.section__footer {
+  padding: 2.5rem 0 1rem;
 }
