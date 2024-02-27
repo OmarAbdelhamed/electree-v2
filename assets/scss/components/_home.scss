@@ -1,6 +1,6 @@
 /*=============== HOME ===============*/
 
-@mixin background($imgpath,$height, $position: center, $repeat: no-repeat) {
+@mixin background($imgpath,$height, $position: top, $repeat: no-repeat) {
   background: {
     image: linear-gradient(
         to top,
@@ -16,7 +16,7 @@
     -o-background-size: cover;
   }
   height: $height;
-  width: 100%;
+  width: 100%;  
   @media (max-width: 650px) {
     background: {
       attachment: scroll;
@@ -27,7 +27,7 @@
 .home {
   
   height: 31rem;
-  @include background('/assets/img/main backgroung pic 2.22.jpg', height);
+  @include background('/assets/img/sample 1.webp', height);
 
   &__data {
     display: flex;

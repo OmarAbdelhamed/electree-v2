@@ -261,8 +261,8 @@ img {
 /*=============== HOME ===============*/
 .home {
   height: 31rem;
-  background-image: linear-gradient(to top, var(--background-hue-first), var(--background-hue-first)), url("/assets/img/main backgroung pic 2.22.jpg");
-  background-position: center;
+  background-image: linear-gradient(to top, var(--background-hue-first), var(--background-hue-first)), url("/assets/img/sample 1.webp");
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background--webkit-background-size: cover;
