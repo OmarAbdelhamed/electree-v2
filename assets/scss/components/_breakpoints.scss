@@ -103,7 +103,7 @@
 
   .steps {
     &__bg {
-      padding: 20px 0px;
+      padding:50px 0px;
     }
   }
   .whyus {
@@ -149,8 +149,9 @@
 
   .steps {
     &__img {
-      width: 500px;
-      height: 350px;
+      width: 400px;
+      height: 400px;
+      margin-top: 0px;
     }
     &__data {
       text-align: center;
