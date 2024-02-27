@@ -929,7 +929,7 @@ the website, in dark theme
     text-align: center;
   }
   .steps__bg {
-    padding: 2rem 1rem;
+    padding: 20px 0px;
   }
   .whyus__bg {
     padding: 2rem 1rem;
@@ -963,8 +963,8 @@ the website, in dark theme
     height: 80px;
   }
   .steps__img {
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 350px;
   }
   .steps__data {
     text-align: center;
