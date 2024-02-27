@@ -509,9 +509,11 @@ the website, in dark theme
   padding-top: 1rem;
 }
 .steps__img {
-  width: 600px;
-  height: 450px;
+  width: 800px;
+  height: 600px;
   justify-self: center;
+  object-fit: cover;
+  margin-top: -60px;
 }
 .steps__data {
   display: flex;
