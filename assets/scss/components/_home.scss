@@ -1,6 +1,6 @@
 /*=============== HOME ===============*/
 
-@mixin background($imgpath,$height, $position: top, $repeat: no-repeat) {
+@mixin background($imgpath,$height, $position: center, $repeat: no-repeat) {
   background: {
     image: linear-gradient(
         to top,
@@ -27,7 +27,7 @@
 .home {
   
   height: 31rem;
-  @include background('/assets/img/sample 1.webp', height);
+  @include background('/assets/img/orange main sample.webp', height);
 
   &__data {
     display: flex;
