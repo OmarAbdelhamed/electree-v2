@@ -69,14 +69,14 @@
 
   .home {
     padding: 15px;
-    height: 25rem;
+    height: 35rem;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 1200px;
 
     &__data {
-      margin: -150px 0 0 0;
+      margin: -200px 0 0 0;
       max-width: 1200px;
     }
     &__img {
@@ -84,7 +84,7 @@
     }
     &__title {
       font-size: 41px;
-      margin-top: 130px;
+      margin-top: 20px;
       max-width: 1200px;
     }
 

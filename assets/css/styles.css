@@ -899,14 +899,14 @@ the website, in dark theme
   }
   .home {
     padding: 15px;
-    height: 25rem;
+    height: 35rem;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 1200px;
   }
   .home__data {
-    margin: -150px 0 0 0;
+    margin: -200px 0 0 0;
     max-width: 1200px;
   }
   .home__img {
@@ -914,7 +914,7 @@ the website, in dark theme
   }
   .home__title {
     font-size: 41px;
-    margin-top: 130px;
+    margin-top: 20px;
     max-width: 1200px;
   }
   .home__description {
