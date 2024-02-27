@@ -1,7 +1,7 @@
 /*=============== CONTACT ===============*/
 .contact {
   &__container {
-    row-gap: 3.5rem;
+    gap: 2.5rem;
   }
   &__data {
     font-family: 'Lato', sans-serif;
@@ -97,7 +97,7 @@
   &::before {
     content: '';
     display: block;
-    width: 545px;
+    width: 100%;
     border-top: 2px solid var(--first-color-social); /* Adjust the color, thickness, and style as needed */
     margin-bottom: 40px;
   }

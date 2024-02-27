@@ -56,13 +56,15 @@
 
   .home {
     padding: 15px;
-    height: 25rem;
+    height: 30rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1200px;
+
     &__data {
       margin: -150px 0 0 0;
-      justify-content: center;
+      max-width: 1200px;
     }
     &__img {
       width: 180px;
@@ -70,6 +72,7 @@
     &__title {
       font-size: 40px;
       margin-top: 150px;
+      max-width: 1200px;
     }
 
     &__description {
@@ -78,6 +81,7 @@
       font-style: normal;
       font-size: 1.1rem;
       text-align: center;
+      max-width: 1200px;
     }
     &__btndiv {
       text-align: center;
@@ -153,150 +157,9 @@
 }
 
 /* For medium devices */
-@media screen and (min-width: 500px) and (max-width: 720px) {
+@media screen and (min-width: 500px) {
   .switch-web {
     display: none;
-  }
-
-  .nav {
-    margin-top: -140px;
-    &__logo {
-      font-size: 30px;
-      margin-bottom: 5px;
-    }
-    &__btns {
-      font-size: 9px;
-      padding: 10px;
-    }
-  }
-
-  .about {
-    &__img {
-      height: 1px;
-      margin-bottom: 30px;
-      margin-top: 30px;
-    }
-    &__data {
-      align-items: center;
-      text-align: center;
-    }
-    &__title {
-      line-height: 2rem;
-      font-size: 25px;
-    }
-
-    &__discription {
-      font-weight: 500;
-    }
-  }
-  .whyus {
-    &__title {
-      text-align: center;
-    }
-  }
-  .whyus .why {
-    &__titles {
-      text-align: center;
-      font-size: 25px;
-    }
-    &__discription {
-      text-align: center;
-      font-weight: 400;
-      font-size: 17px;
-    }
-  }
-
-  .home {
-    padding: 15px;
-    height: 25rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &__data {
-      margin: 0 10px 0 10px;
-      justify-content: center;
-      align-items: center;
-    }
-    &__img {
-      width: 180px;
-    }
-    &__title {
-      font-size: 40px;
-    }
-
-    &__description {
-      font-family: 'Lato', sans-serif;
-      font-weight: 600;
-      font-style: normal;
-      width: 800px;
-      font-size: 1.1rem;
-      text-align: center;
-    }
-    &__btndiv {
-      text-align: center;
-    }
-  }
-
-  .steps {
-    &__bg {
-      padding: 2rem 1rem;
-    }
-  }
-  .whyus {
-    &__bg {
-      padding: 2rem 1rem;
-    }
-    &__card {
-      padding: 1.5rem;
-    }
-  }
-  .switch-web {
-    display: none;
-  }
-
-  .whyus {
-    .icons__row {
-      flex-direction: column;
-    }
-    .icon__rowcontainer {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
-    .card {
-      margin-bottom: 20px;
-      &__img {
-        width: 80px;
-        height: 80px;
-      }
-    }
-  }
-
-  .steps {
-    &__img {
-      width: 400px;
-      height: 315px;
-    }
-    &__data {
-      text-align: center;
-      align-items: center;
-    }
-
-    &__head {
-      text-align: center;
-    }
-    &__title {
-      line-height: 2rem;
-      font-size: 20px;
-    }
-    &__discription {
-      margin-top: 10px;
-      font-weight: 500;
-    }
-  }
-  .map {
-    width: 360px;
-    height: 300px;
   }
 
   .steps {
@@ -305,8 +168,26 @@
     }
   }
 
+  // .about__img {
+  //   width: 420px;
+  // }
+
+  // .about__container {
+  //   margin-bottom: 150px;
+  // }
+
+  .product {
+    &__description {
+      padding: 0 4rem;
+    }
+    &__container {
+      grid-template-columns: repeat(2, 170px);
+      justify-content: center;
+      column-gap: 5rem;
+    }
+  }
   .home {
-    padding: 5rem 0 5rem;
+    padding: 10rem 0 5rem;
 
     &__container {
       align-items: center;
@@ -317,27 +198,19 @@
     }
 
     &__description {
-      width: 500px;
-      text-align: center;
+      width: 400px;
+      font-size: medium;
     }
   }
 
-  .footer__container {
-    margin: 10px;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  // .footer__subscribe {
+  //   width: 400px;
+  // }
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 767px) {
   body {
     margin: 0;
-  }
-
-  .footer__container {
-    margin: 10px;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .switch-web {
@@ -368,6 +241,10 @@
   .steps__container,
   .questions__container,
   .contact__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -494,9 +371,6 @@
     }
     &__container {
       grid-template-columns: 1fr 1fr 1fr;
-    }
-    &__copy {
-      margin: 7rem 0 2rem;
     }
   }
 }
