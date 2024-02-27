@@ -154,6 +154,12 @@
     width: 360px;
     height: 300px;
   }
+
+  .footer{
+    &__content3{
+      align-items: center;
+    }
+  }
 }
 
 /* For medium devices */

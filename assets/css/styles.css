@@ -957,6 +957,9 @@ the website, in dark theme
     width: 360px;
     height: 300px;
   }
+  .footer__content3 {
+    align-items: center;
+  }
 }
 /* For medium devices */
 @media screen and (min-width: 500px) {
