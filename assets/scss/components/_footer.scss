@@ -10,6 +10,7 @@
     row-gap: 3rem;
     justify-content: center;
     align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   &__logo {
     font-family: 'Paytone One', sans-serif;

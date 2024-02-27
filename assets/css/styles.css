@@ -108,6 +108,18 @@ img {
   height: auto;
 }
 
+.home__container,
+.about__container,
+.steps__container,
+.questions__container,
+.contact__container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer__container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
@@ -314,7 +326,8 @@ the website, in dark theme
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  margin: -80px 200px 0px 200px;
+  margin: -30px 200px 0px 200px;
+  padding: 0px 0 0 0;
   max-width: 1150px;
 }
 .home__title {
@@ -409,7 +422,7 @@ the website, in dark theme
   color: #303030;
   font-family: "Lato", sans-serif;
   font-size: 30px;
-  line-height: 1rem;
+  line-height: 2rem;
 }
 .about__discription {
   font-family: "Lato", sans-serif;
@@ -427,11 +440,15 @@ the website, in dark theme
   padding: 10px;
   border-radius: 3px;
 }
+.about__container {
+  column-gap: 2rem;
+}
 
 /*=============== STEPS ===============*/
 .whyus__bg {
   background-color: white;
   width: 100%;
+  padding: 3.5rem 2.5rem;
 }
 .whyus__container {
   display: flex;
@@ -704,6 +721,7 @@ the website, in dark theme
   row-gap: 3rem;
   justify-content: center;
   align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .footer__logo {
   font-family: "Paytone One", sans-serif;
@@ -828,10 +846,20 @@ the website, in dark theme
 /*=============== SCROLL BAR ===============*/
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 800px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
+  }
+  .home__container,
+  .about__container,
+  .steps__container,
+  .questions__container,
+  .contact__container {
+    grid-template-columns: 1fr;
+  }
+  .footer__container {
+    grid-template-columns: 1fr;
   }
   .nav {
     margin-top: -140px;
@@ -874,7 +902,7 @@ the website, in dark theme
   }
   .home {
     padding: 15px;
-    height: 30rem;
+    height: 35rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -960,38 +988,11 @@ the website, in dark theme
   .footer__content3 {
     align-items: center;
   }
-}
-/* For medium devices */
-@media screen and (min-width: 500px) {
-  .switch-web {
-    display: none;
-  }
-  .steps__container {
-    grid-template-columns: repeat(1fr);
-  }
-  .product__description {
-    padding: 0 4rem;
-  }
-  .product__container {
-    grid-template-columns: repeat(2, 170px);
-    justify-content: center;
-    column-gap: 5rem;
-  }
-  .home {
-    padding: 10rem 0 5rem;
-  }
-  .home__container {
+  .footer__content1 {
     align-items: center;
   }
-  .home__img {
-    width: 280px;
-    order: 1;
-  }
-  .home__description {
-    width: 400px;
-    font-size: medium;
-  }
 }
+/* For medium devices */
 @media screen and (min-width: 767px) {
   body {
     margin: 0;
@@ -1013,35 +1014,12 @@ the website, in dark theme
     flex-direction: row;
     column-gap: 1px;
   }
-  .home__container,
-  .about__container,
-  .steps__container,
-  .questions__container,
-  .contact__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .footer__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .home {
-    padding: 10rem 0 5rem;
-  }
-  .home__img {
-    width: 280px;
-    order: 1;
+    padding: 10rem 0px 5rem;
   }
   .home__description {
     width: 600px;
     font-size: larger;
-  }
-  .questions__container {
-    align-items: flex-start;
-  }
-  .footer__container {
-    column-gap: 3rem;
-  }
-  .footer__subscribe {
-    width: initial;
   }
   .steps__bg {
     padding: 8rem 150px;
@@ -1070,57 +1048,8 @@ the website, in dark theme
     flex-direction: row;
     gap: 1px;
   }
-  .home {
-    padding: 13rem 0 5rem;
-  }
-  .home__img {
-    width: 350px;
-  }
-  .home__description {
-    width: 800px;
-    font-size: larger;
-  }
-  .whyus__container {
-    grid-template-columns: repeat(1fr);
-  }
-  .whyus__bg {
-    padding: 3.5rem 2.5rem;
-  }
-  .whyus__card-title {
-    font-size: var(--h2-font-size);
-  }
-  .product__description {
-    padding: 0 16rem;
-  }
-  .product__container {
-    padding: 4rem 0;
-    grid-template-columns: repeat(3, 185px);
-    gap: 4rem 6rem;
-  }
-  .product__img {
-    width: 160px;
-  }
-  .product__circle {
-    width: 110px;
-    height: 110px;
-  }
-  .product__title, .product__price {
-    font-size: var(--normal-font-size);
-  }
-  .footer__logo {
-    font-size: var(--h3-font-size);
-  }
-  .footer__container {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
 @media screen and (min-width: 1200px) {
-  .about__container {
-    column-gap: 2rem;
-  }
-  .steps__container {
-    column-gap: 2rem;
-  }
   .scrollup {
     right: 3rem;
   }

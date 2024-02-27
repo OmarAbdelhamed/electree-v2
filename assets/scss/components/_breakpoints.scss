@@ -1,9 +1,21 @@
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 800px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
+  }
+
+  .home__container,
+  .about__container,
+  .steps__container,
+  .questions__container,
+  .contact__container {
+    grid-template-columns:  1fr;
+  }
+
+  .footer__container {
+    grid-template-columns:  1fr;
   }
 
   .nav {
@@ -56,7 +68,7 @@
 
   .home {
     padding: 15px;
-    height: 30rem;
+    height: 35rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,60 +171,54 @@
     &__content3 {
       align-items: center;
     }
+    &__content1 {
+      align-items: center;
+    }
   }
 }
 
 /* For medium devices */
-@media screen and (min-width: 500px) {
-  .switch-web {
-    display: none;
-  }
+// @media screen and (min-width: 500px) {
+//   .switch-web {
+//     display: none;
+//   }
 
-  .steps {
-    &__container {
-      grid-template-columns: repeat(1fr);
-    }
-  }
+//   .steps {
+//     &__container {
+//       grid-template-columns: repeat(1fr);
+//     }
+//   }
 
-  // .about__img {
-  //   width: 420px;
-  // }
+//   // .about__img {
+//   //   width: 420px;
+//   // }
 
-  // .about__container {
-  //   margin-bottom: 150px;
-  // }
+//   // .about__container {
+//   //   margin-bottom: 150px;
+//   // }
 
-  .product {
-    &__description {
-      padding: 0 4rem;
-    }
-    &__container {
-      grid-template-columns: repeat(2, 170px);
-      justify-content: center;
-      column-gap: 5rem;
-    }
-  }
-  .home {
-    padding: 10rem 0 5rem;
+  
+//   .home {
+//     padding: 10rem 0 5rem;
 
-    &__container {
-      align-items: center;
-    }
-    &__img {
-      width: 280px;
-      order: 1;
-    }
+//     &__container {
+//       align-items: center;
+//     }
+//     &__img {
+//       width: 280px;
+//       order: 1;
+//     }
 
-    &__description {
-      width: 400px;
-      font-size: medium;
-    }
-  }
+//     &__description {
+//       width: 400px;
+//       font-size: medium;
+//     }
+//   }
 
-  // .footer__subscribe {
-  //   width: 400px;
-  // }
-}
+//   // .footer__subscribe {
+//   //   width: 400px;
+//   // }
+// }
 
 @media screen and (min-width: 767px) {
   body {
@@ -242,46 +248,18 @@
     }
   }
 
-  .home__container,
-  .about__container,
-  .steps__container,
-  .questions__container,
-  .contact__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footer__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  
 
   // .about__container {
   //   margin-bottom: 100px;
   // }
 
   .home {
-    padding: 10rem 0 5rem;
-
-    &__img {
-      width: 280px;
-      order: 1;
-    }
+    padding: 10rem 0px 5rem;
 
     &__description {
       width: 600px;
       font-size: larger;
-    }
-  }
-
-  .questions__container {
-    align-items: flex-start;
-  }
-
-  .footer {
-    &__container {
-      column-gap: 3rem;
-    }
-    &__subscribe {
-      width: initial;
     }
   }
 
@@ -320,74 +298,9 @@
       gap: 1px;
     }
   }
-
-  .home {
-    padding: 13rem 0 5rem;
-
-    &__img {
-      width: 350px;
-    }
-    &__description {
-      width: 800px;
-      font-size: larger;
-    }
-  }
-
-  // .about__img {
-  //   width: 420px;
-  // }
-
-  .whyus {
-    &__container {
-      grid-template-columns: repeat(1fr);
-    }
-    &__bg {
-      padding: 3.5rem 2.5rem;
-    }
-    &__card-title {
-      font-size: var(--h2-font-size);
-    }
-  }
-
-  .product {
-    &__description {
-      padding: 0 16rem;
-    }
-    &__container {
-      padding: 4rem 0;
-      grid-template-columns: repeat(3, 185px);
-      gap: 4rem 6rem;
-    }
-    &__img {
-      width: 160px;
-    }
-    &__circle {
-      width: 110px;
-      height: 110px;
-    }
-    &__title,
-    &__price {
-      font-size: var(--normal-font-size);
-    }
-  }
-
-  .footer {
-    &__logo {
-      font-size: var(--h3-font-size);
-    }
-    &__container {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
 }
 
 @media screen and (min-width: 1200px) {
-  .about__container {
-    column-gap: 2rem;
-  }
-  .steps__container {
-    column-gap: 2rem;
-  }
 
   .scrollup {
     right: 3rem;
