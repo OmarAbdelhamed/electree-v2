@@ -944,6 +944,9 @@ the website, in dark theme
   .switch-web {
     display: none;
   }
+  .contact__subtitle {
+    text-align: center;
+  }
   .whyus .icons__row {
     flex-direction: column;
   }
