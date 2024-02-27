@@ -73,16 +73,19 @@
     column-gap: 0.5rem;
   }
   &__copy {
-    text-align: center;
-    font-size: 25px;
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 60px;
     font-family: 'Lato', sans-serif;
-    color: var(--text-color-light);
-    margin: 5rem 0 1rem;
+    color: white;
+  }
+  &__copydiv {
     &:before {
       content: '';
       display: block;
       border-top: 2px solid rgb(86, 86, 86); /* Adjust the color, thickness, and style as needed */
-      margin-bottom: 10px;
+      margin-bottom: 30px;
+      margin-top: 100px;
     }
   }
   &__content1 {
@@ -108,5 +111,4 @@
 
 .section__footer {
   padding: 2.5rem 0 1rem;
-  
 }

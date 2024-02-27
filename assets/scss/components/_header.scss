@@ -30,7 +30,6 @@
     column-gap: 0.5rem;
     transition: 0.2s;
     margin-bottom: 10px;
-    
 
     &:hover {
       color: var(--first-color-social);
@@ -86,7 +85,6 @@
     font-weight: 200;
     margin-right: -60px;
     margin-bottom: 30px;
-    
   }
   &__link {
     font-family: 'Lato', sans-serif;
@@ -107,6 +105,9 @@
     border-radius: 4px;
     border: 1px solid #1ba00c;
     margin-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 1rem;
   }
 }
 
